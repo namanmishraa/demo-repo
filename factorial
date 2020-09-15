@@ -1,0 +1,22 @@
+package naman;
+
+public class FactorialOfNum {
+	
+	static int factorial=1;
+
+	public static void main(String[] args) {
+		int cal=5;
+		fact(cal);
+		System.out.println("factorial of "+ cal+" is "+factorial);
+		// TODO Auto-generated method stub
+
+	}
+	public static void fact(int cal) {
+		if(cal>1) {
+		factorial=cal*factorial;
+		fact(cal-1);
+		}
+		
+	}
+
+}
